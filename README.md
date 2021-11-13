@@ -1,12 +1,22 @@
-# Getting Started with Create React App
+# Bike store
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project was bootstrapped with [Create React App](https://bike-store-2f442.web.app/).
 
-## Available Scripts
+## Main Points
+1. customer esaily service
+2. and this service is very good 
+3. this customer details information are collected
+4. and many collection of product
+5. and many process are website and this site is help customer
+6. 
 
 In the project directory, you can run:
 
-### `npm start`
+### tools
+javascript
+bootstrap
+css
+
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
