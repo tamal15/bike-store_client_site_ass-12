@@ -1,0 +1,17 @@
+.subs{
+    background-color: black;
+    color:white;
+    border:lightgrey;
+    border-radius: 8px;
+}
+
+.bg-honda{
+    background:url(https://image.shutterstock.com/image-vector/happy-people-disconnecting-doing-digital-260nw-1651885657.jpg);
+    margin-top:150px;
+    background-color:rgba(45,58,74,0.9);
+    background-blend-mode:darken, luminosity;
+    
+        /* marginTop:150, */
+        /* background-color:'rgba(45,58,74,0.9)',
+        backgroundBlendMode:'darken, luminosity' */
+}

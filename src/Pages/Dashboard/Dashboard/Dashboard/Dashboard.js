@@ -1,4 +1,5 @@
 import React from 'react';
+// import { Spinner } from 'react-bootstrap';
 import { Link, useRouteMatch, Switch, Route } from 'react-router-dom';
 import useAuth from '../../../../hooks/useAuth';
 import AddProducts from '../../../Admin/Admin/AddProducts';
@@ -16,8 +17,12 @@ import UserName from '../UserName/UserName';
 import './Dashboard.css'
 
 const Dashboard = () => {
+ 
   let { path, url } = useRouteMatch();
   const { admin ,logout} = useAuth()
+  // if(!admin){
+  //   return <Spinner animation="border" variant="danger" />
+  // }
   return (
     <div>
       <div className="dashboard-container ">
@@ -68,7 +73,7 @@ const Dashboard = () => {
               </Link>
              
               <Link to={`${url}/review`} style={{textDecoration:'none',color:'blue'}}>
-                <li className="dashboard-menu mt-5">Review</li>
+                <li className="dashboard-menu mt-3">Review</li>
               </Link>
 
               <Link to={`${url}/pay`} style={{textDecoration:'none',color:'blue'}}>

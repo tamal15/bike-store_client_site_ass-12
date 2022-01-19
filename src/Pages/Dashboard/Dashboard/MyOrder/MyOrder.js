@@ -44,7 +44,7 @@ const MyOrder = () => {
                             <div className="col-lg-6 mb-5 mt-5 col-sm-12 image-card ">
            
                             <div className="card" style={designShow}>
-                                <img className="image-design" src={offers?.img} class="card-img-top" alt="..." />
+                                {/* <img className="image-design" src={offers?.img} class="card-img-top" alt="..." /> */}
                                 <div class="card-body body-designs">
                                     <h3>{offers?.name}</h3>
                                     <p class="card-text">{offers?.description}.</p>

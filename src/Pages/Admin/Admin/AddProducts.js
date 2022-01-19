@@ -22,7 +22,7 @@ const AddProducts = () => {
     }
     return (
         <div className="submits">
-            <Navigation></Navigation>
+            {/* <Navigation></Navigation> */}
             <h1>Add new Products</h1>
         <form onSubmit={handleSubmit(onSubmit)}>
  <input {...register("name", { required: true, maxLength: 20 })} placeholder="name" />

@@ -3,6 +3,7 @@ import { useParams } from 'react-router';
 import { useForm } from 'react-hook-form';
 import useAuth from '../../hooks/useAuth';
 import Navigation from '../Shared/Navigation/Navigation';
+import swal from 'sweetalert';
 
 const DetailsProducts = () => {
     const [details, setDetails]=useState({})
@@ -33,7 +34,16 @@ const DetailsProducts = () => {
               body:JSON.stringify(data)
           })
           .then(res=>res.json())
-          .then(result=>console.log(result));
+          .then(result=>{
+            if(result.insertedId){
+                alert("product successfully order")
+                swal("Good job!", "product successfully order!", "success");
+            }
+            // console.log(result));
+          })
+        
+          
+          
           console.log(data)
     }
 

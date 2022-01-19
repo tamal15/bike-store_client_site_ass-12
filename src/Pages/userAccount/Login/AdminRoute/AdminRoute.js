@@ -6,7 +6,7 @@ import { Spinner } from 'react-bootstrap';
 
 const AdminRoute = ({children, ...rest}) => {
     const {user,isLoading,admin}=useAuth()
-    if(isLoading){
+    if(!admin){
         return <Spinner animation="border" variant="danger" />
     }
     return (

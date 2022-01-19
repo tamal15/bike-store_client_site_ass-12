@@ -47,12 +47,24 @@ const Review = () => {
           {...register("comments", { required: true })}
         />
         <br />
-        <input
+        <br />
+        
+
+        <label className="m-1">Rating</label>
+        <select className="p-2" {...register('rating')} defaultvalue='please'>
+          <option value='5'>please select</option>
+          <option value='1'>1</option>
+          <option value='2'>2</option>
+          <option value='3'>3</option>
+          <option value='4'>4</option>
+          <option value='5'>5</option>
+        </select>
+        {/* <input
           className="input-field"
           name="number"
           placeholder="number"
           {...register("number", { required: true })}
-        />
+        /> */}
         <br />
 
         <input

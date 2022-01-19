@@ -10,7 +10,7 @@ const Navigation = () => {
         <div>
               <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
             <div class="container">
-              <a className="navbar-brand d-flex align-items-center" href="https://www.google.com/">  <img src="" alt="" width="50" height="49" class="d-inline-block align-text-top "/>
+              <a className="navbar-brand d-flex align-items-center" href="https://www.google.com/">  <img src="https://cdn1.bikebandit-images.com/product_images/fa/450/factory-effex-honda-wing-logo-sticker-3-pack.jpg" alt="" width="50" height="49" class="d-inline-block align-text-top "/>
                 <span class="ms-3 ">Bike Store</span></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
