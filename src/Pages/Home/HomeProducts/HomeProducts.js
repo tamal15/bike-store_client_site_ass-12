@@ -20,19 +20,19 @@ const HomeProducts = () => {
             })
         },[])
     const designShow = {
-        width: '20rem'
+        width: '19rem'
     }
     return (
         <div className="cars">
-            <div className="container">
-                <h1 className="mt-5">Many <span className="mans">Bike</span></h1>
-                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4  mx-auto">
+            <div className="container ">
+                <h1 className="mt-5 pb-5">Many <span className="mans">Bike</span></h1>
+                <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5  mx-auto">
 
                 {
                         product.map((offers,index)=>(
-                            <div className="col mb-5 mt-5 image-card ">
+                            <div className="col ">
            
-                            <div className="card " style={designShow}>
+                            <div className="card h-100" style={designShow}>
                                 <img className="image-design" src={offers.img} class="card-img-top" alt="..." />
                                 <div class="card-body body-designs finals">
                                     <h3>{offers.name}</h3>
@@ -52,6 +52,42 @@ const HomeProducts = () => {
                 </div>
             </div>
         </div>
+
+
+
+
+
+
+        // start 
+        //    <div>
+        //        <section className='container my-5'>
+        //        <h1 className="mt-5 pb-5">Many <span className="mans">Bike</span></h1>
+        //            <div className='row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mx-auto'>
+
+        //            {
+        //                  product.map((offers,index)=>(
+        //                     <div className="col">
+        //                     <div className="card h-100">
+        //                       <img src={offers.img} className="card-img-top rounded-circle p-4 mx-auto" alt="..."/>
+        //                       <div className="card-body finals">
+                                
+        //                         <p className="card-text text-center halka">{offers.name}</p>
+        //                           <div className="text-center ">
+                                   
+        //                            <h6 className="my-2 client-name skip">{offers.description}</h6>
+        //                            <Link to={`/serviceDetails/${offers._id}`}> <button className="button">Buy Now</button></Link>
+        //                           </div>
+        //                       </div>
+                             
+        //                     </div>
+        //                   </div>
+        //                  ))
+        //              }
+        //            </div>
+        //        </section>
+        //    </div>
+
+        // end 
     );
 };
 

@@ -55,19 +55,19 @@ const Navigation = () => {
                    {
                        
                         user?.email ?
-                        <div>
+                        <div className='p-2'>
                           
-                          <NavLink  style={{textDecoration:'none',color:'white' }} to='/dashboard'>
-                          <button color="inherit">Dashboard</button>
+                          <NavLink  style={{textDecoration:'none',color:'white', margin:4 }} to='/dashboard'>
+                          <button className='button' color="inherit">Dashboard</button>
                         </NavLink>
             
-                        <button onClick={logout} color="inherit">Logout</button>
+                        <button className='button' onClick={logout} color="inherit">Logout</button>
                         </div>
                        
                       
                         :
                         <NavLink style={{textDecoration:'none',color:'white'}} to='/login'>
-                        <button color="inherit">Login</button>
+                        <button className='button' color="inherit">Login</button>
                         </NavLink>
                       
                       

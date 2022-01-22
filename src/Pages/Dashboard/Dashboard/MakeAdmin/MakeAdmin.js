@@ -46,7 +46,7 @@ const MakeAdmin = () => {
           required
           className=' outline-none px-3 py-2 '
         />
-        <button type="submit">Make Admin</button>
+        <button className='button' type="submit">Make Admin</button>
 
         {/* {
                 success &&

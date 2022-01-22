@@ -40,11 +40,11 @@ const ManageProduct = () => {
         // });
         // console.log(id)
     const designShow = {
-        width: '18rem'
+        width: '19rem'
     }
     return (
         <div>
-            <div className="container">
+            <div className="container keywords">
                 <div className="row">
 
                 {
@@ -53,10 +53,10 @@ const ManageProduct = () => {
            
                             <div className="card" style={designShow}>
                                 <img className="image-design" src={offers.img} class="card-img-top" alt="..." />
-                                <div class="card-body body-designs">
+                                <div class="card-body body-designs finals">
                                     <h3>{offers.name}</h3>
                                     <h3>{offers.price}</h3>
-                                    <p class="card-text">{offers.description}.</p>
+                                    <p class="card-text texts">{offers.description}.</p>
                                   
                                     <button className="button" onClick={()=>handleDelete(offers?._id)}>Delete</button>
                                  

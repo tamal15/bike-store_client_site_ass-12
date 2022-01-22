@@ -48,9 +48,9 @@ const MyOrder = () => {
                                 <div class="card-body body-designs">
                                     <h3>{offers?.name}</h3>
                                     <p class="card-text">{offers?.description}.</p>
-                                    <h6 className="bg-danger text-white me-5 p-1">{offers?.status}</h6>
+                                    <h6 className="bg-danger text-white me-2 p-1 ">{offers?.status}</h6>
                                   
-                                  <button onClick={()=>handleDelete(offers?._id)}>Delete</button>
+                                  <button className='button' onClick={()=>handleDelete(offers?._id)}>Delete</button>
                                   
                                  
                                 </div>

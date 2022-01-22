@@ -1,5 +1,6 @@
 .dashboard {
-    background-color:linen;
+    /* background-color:linen; */
+    background-color: #1f2833;
     height: 100vh;
     color: white;
     cursor: pointer;
@@ -21,5 +22,6 @@
 .dashboards{
   line-height: 110px;
   
-  background-color: bisque;
+  /* background-color: bisque; */
+  background-color: #1f2833;
 }

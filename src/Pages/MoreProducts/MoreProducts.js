@@ -11,25 +11,25 @@ const MoreProducts = () => {
         .then(data=>setProduct(data))
     },[])
     const designShow = {
-        width: '18rem'
+        width: '19rem'
     }
 
     return (
         <div>
             <Navigation></Navigation>
-          <div className="container">
-              <div className="row">
+          <div className="container keywords">
+              <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5  mx-auto">
 
               {
                         product.map((offers,index)=>(
-                            <div className="col-lg-4 mb-5 mt-5 col-sm-12 image-card ">
+                            <div className="col">
            
-                            <div className="card" style={designShow}>
+                            <div className="card mt-5" style={designShow}>
                                 <img className="image-design" src={offers.img} class="card-img-top" alt="..." />
-                                <div class="card-body body-designs">
+                                <div class="card-body body-designs finals">
                                     <h3>{offers.name}</h3>
                                     <h3>{offers.price}</h3>
-                                    <p class="card-text">{offers.description}.</p>
+                                    <p class="card-text texts">{offers.description}.</p>
                                   
                                     <Link to={`/serviceDetails/${offers._id}`}> <button className="button">Buy Now</button></Link>
                                   

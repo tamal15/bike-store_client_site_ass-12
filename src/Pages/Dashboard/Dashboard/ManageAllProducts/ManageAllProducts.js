@@ -40,7 +40,7 @@ const ManageAllProducts = () => {
             <th>#</th>
             <th>Service Title</th>
             <th>Event description</th>
-            <th>Image Link</th>
+            {/* <th>Image Link</th> */}
             <th>Status</th>
             <th>Action</th>
           </tr>
@@ -51,7 +51,7 @@ const ManageAllProducts = () => {
               <td>{index}</td>
               <td>{pd.name}</td>
               <td>{pd.description}</td>
-              <td>{pd?.img}</td>
+              {/* <td>{pd?.img}</td> */}
               <td>
                 <form onSubmit={handleSubmit(onSubmit)}>
                   <select

@@ -1,6 +1,6 @@
 .card img{
     height:180px;
-    width:315px;
+    width:298px;
     /* position:fixed; */
     padding:7px;
     border-radius: 15px;
@@ -36,9 +36,16 @@
     /* padding: 10px; */
     /* background-color:whitesmoke; */
 }
-
+.halka{
+    font-size: 28px;
+    font-weight: 600;
+}
+.skip{
+    text-align: left;
+}
 .texts{
     font-weight: 600;
+    text-align: left;
 }
 .mans{
     color:brown;

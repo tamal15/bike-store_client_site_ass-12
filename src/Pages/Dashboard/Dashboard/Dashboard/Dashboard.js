@@ -26,12 +26,12 @@ const Dashboard = () => {
   return (
     <div>
       <div className="dashboard-container ">
-        <h2 className="  dashboards">Dashboard</h2>
+        <h2 style={{color:"white"}} className="  dashboards">Dashboard</h2>
         <div className="row">
           <div className="col-md-3 ">
             <div className="dashboard pt-3">
         
-            <Link style={{textDecoration:'none',color:'blue'}} to='/home'> Home
+            <Link style={{textDecoration:'none',color:'white',fontSize:23}} to='/home'> Home
 
             </Link>
 
@@ -40,23 +40,23 @@ const Dashboard = () => {
 
                 <div>
 
-                  <Link to={`${url}/makeAdmin`} style={{textDecoration:'none',color:'blue'}}>
-                    <li className="dashboard-menu mt-5">Make Admin</li>
+                  <Link to={`${url}/makeAdmin`} style={{textDecoration:'none',color:'white',fontSize:23}}>
+                    <li className="dashboard-menu mt-4">Make Admin</li>
                   </Link>
 
-                  <Link to={`${url}/manageOrder`} style={{textDecoration:'none',color:'blue'}}>
-                <li className="dashboard-menu mt-5">Manage All Order</li>
+                  <Link to={`${url}/manageOrder`} style={{textDecoration:'none',color:'white',fontSize:23}}>
+                <li className="dashboard-menu mt-4">Manage All Order</li>
               </Link>
-                  <Link to={`${url}/addproducts`} style={{textDecoration:'none',color:'blue'}}>
-                <li className="dashboard-menu mt-5">Add a Products</li>
+                  <Link to={`${url}/addproducts`} style={{textDecoration:'none',color:'white',fontSize:23}}>
+                <li className="dashboard-menu mt-4">Add Products</li>
               </Link>
 
-              <Link to={`${url}/manageProduct`} style={{textDecoration:'none',color:'blue'}}>
-                <li className="dashboard-menu mt-5">Manage Product</li>
+              <Link to={`${url}/manageProduct`} style={{textDecoration:'none',color:'white', fontSize:23}}>
+                <li className="dashboard-menu mt-4">Manage Product</li>
               </Link>
 
               <Link to='/login'>
-              <button className="mt-5" onClick={logout} color="inherit">Logout</button>
+              <button className="mt-5 button" onClick={logout} color="inherit">Logout</button>
               </Link>
                 </div>
               }
@@ -68,22 +68,22 @@ const Dashboard = () => {
 
                 <div>
 
-<Link to={`${url}/myOrder`} style={{textDecoration:'none',color:'blue'}}>
-                <li className="dashboard-menu mt-5">My Order</li>
+<Link to={`${url}/myOrder`} style={{textDecoration:'none',color:'white',fontSize:23}}>
+                <li className="dashboard-menu mt-4">My Order</li>
               </Link>
              
-              <Link to={`${url}/review`} style={{textDecoration:'none',color:'blue'}}>
+              <Link to={`${url}/review`} style={{textDecoration:'none',color:'white',fontSize:23}}>
                 <li className="dashboard-menu mt-3">Review</li>
               </Link>
 
-              <Link to={`${url}/pay`} style={{textDecoration:'none',color:'blue'}}>
+              <Link to={`${url}/pay`} style={{textDecoration:'none',color:'white',fontSize:23}}>
                 <li className="dashboard-menu ">pay</li>
               </Link>
                
                
            <Link to='/login'>
            
-           <button className="mt-5" onClick={logout} color="inherit">Logout</button>
+           <button className="mt-5 button" onClick={logout} color="inherit">Logout</button>
 
            </Link>
 

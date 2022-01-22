@@ -17,7 +17,7 @@ const DetailsProducts = () => {
         .then(data=>setDetails(data))
     },[])
     const designShow = {
-        width: '18rem'
+        width: '19rem'
     }
 
     const onSubmit=(data)=>{
@@ -53,10 +53,10 @@ const DetailsProducts = () => {
     return (
         <div>
             <Navigation></Navigation>
-             <div className="container">
+             <div className="container mt-5">
       
-      <div className="row">
-      <div className="col-lg-4 mb-5 mt-5 col-sm-12 image-card ">
+      <div className="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-5  mx-auto">
+      <div className="col mb-5 mt-5  image-card ">
      <div className="card" style={designShow}>
          <img className="image-design" src={details.img} class="card-img-top" alt="..." />
          <div class="card-body body-designs">
@@ -75,7 +75,7 @@ const DetailsProducts = () => {
     
  </div>
 
- <div className="col-lg-8">
+ <div className="col-lg-8 mt-5">
  <div className="submits">
           <form onSubmit={handleSubmit(onSubmit)}>
    <input {...register("name", { required: true, maxLength: 20 })} placeholder="name" defaultValue={details.name} />
